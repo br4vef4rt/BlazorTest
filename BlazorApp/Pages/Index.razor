@@ -1,0 +1,22 @@
+@page "/"
+
+<h1>Welcome to My Blazor App</h1>
+
+<p>This is a basic Blazor app created in Replit.</p>
+
+<button class="btn btn-primary" @onclick="ShowMessage">Click me!</button>
+
+@if (showMessage)
+{
+    <p>Hello, you clicked the button!</p>
+}
+
+@code {
+    private bool showMessage = false;
+
+    private void ShowMessage()
+    {
+        showMessage = true;
+    }
+}
+
